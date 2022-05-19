@@ -1,0 +1,150 @@
+﻿@page "/"
+<PageTitle>Gaming Profile</PageTitle>
+
+<main>
+    <section class="glass">
+        <div class="dashboard">
+
+
+            <!--DASHBOARD SECTION--------------------------------------------------------------------------------------------------------------------------->
+
+            <div class="image">
+                <MudPaper Height="140px" Width="140px">
+                    <MudImage Src="https://pbs.twimg.com/media/Ej2wuPWXYAAPfQn.jpg:large" Elevation="25" Class="rounded-circle" Width="130" Height="130" />
+                </MudPaper>
+                <MudText Typo="Typo.h1" Style="color:#4C3CAF">Erin Dante</MudText>
+            </div>
+
+            <div class="icons">
+                <div class="icon">
+                    <MudPaper Height="60px" Width="60px">
+                        <MudIcon Icon="@Icons.Custom.Brands.Twitter" />
+                    </MudPaper>
+                    <MudLink Href="https://twitter.com">
+                        <MudText Style="color:#4C3CAF; margin-left: 2rem" Typo="Typo.h4 ">Twitter</MudText>
+                    </MudLink>
+
+                </div>
+
+                <div class="icon">
+                    <MudPaper Height="60px" Width="60px">
+                        <MudIcon Icon="@Icons.Custom.Brands.Instagram" Size="Size.Small" />
+                    </MudPaper>
+                    <MudLink Href="https://www.instagram.com/p/CdRmEZapSFn/?igshid=YmMyMTA2M2Y=">
+                        <MudText Typo="Typo.h4" Style="color:#4C3CAF; margin-left: 2rem">Instagram</MudText>
+                    </MudLink>
+
+                </div>
+
+
+                <div class="icon">
+                    <MudPaper Height="60px" Width="60px">
+                        <MudIcon Icon="@Icons.Custom.Uncategorized.WaterMelon" Size="Size.Small" />
+                    </MudPaper>
+                    <MudLink Href="https://www.gardeningknowhow.com/wp-content/uploads/2021/05/whole-and-slices-watermelon.jpg">
+                        <MudText Typo="Typo.h4" Style="color:#4C3CAF; margin-left: 2rem">Watermelon</MudText>
+                    </MudLink>
+
+                </div>
+            </div>
+
+            <MudButton Href="https://github.com/voidnire" Style="color:white; background: linear-gradient(to right top,#00F2FE,#8E2DE2); padding:1rem; display:flex;
+    position: relative; border-radius: 2rem; text-transform:none;" Disabled=@disabled Target="_blank">
+                <MudPaper Height="75px" Width="75px" Style="position: absolute; top:15%;
+                                                                                right: 10%;">
+                    <MudIcon Icon="@Icons.Custom.Brands.GitHub" Size="Size.Small" />
+                </MudPaper>
+
+                <MudText Typo="Typo.h2" Class="pa-4 mud-theme-primary" Style="width:50%;">Check out more projects!</MudText>
+            </MudButton>
+
+        </div>
+
+        <!-- GAMES SECTION--------------------------------------------------------------->
+
+        
+        <div class="games">
+            <div class="status">
+                <MudText Typo="Typo.h2" Style="color:#4C3CAF; font-size:2rem; opacity: 0.8; ">Active games</MudText>
+                <MudSpacer />
+                <MudPaper Height="75px" Width="75px">
+                    <MudIcon Icon="@Icons.Filled.VideogameAsset" />
+                </MudPaper>
+            </div>
+            <input id="sig" type="text" name="text" class="input" placeholder="search here..." />
+            
+
+
+
+            <div class="cards">
+
+                <MudCard Style="background: linear-gradient(to left top, rgba(255,255,255,1), rgba(255,255,255,0.8));
+                                                          border-radius:20px; margin: 2rem 0rem; padding: 5px;
+                                                          box-shadow: rgba(151, 65, 252, 0.2) 0 15px 30px -5px;
+                                                          background: linear-gradient(144deg,#AF40FF, #5B42F3 50%,#00DDEB);" Elevation="2">
+
+                    <MudCard Style="display: flex;  border-radius: 17px;
+                                     width: 100%; height: 100%;  align-items:center;
+                                     padding:10px;
+                                     background: linear-gradient(to left top, rgba(255,255,255,1), rgba(255,255,255,0.8));">
+                        <MudImage Height="150" Width="150" Class="rounded-lg" Src="https://image.api.playstation.com/vulcan/ap/rnd/202104/0517/9AcM3vy5t77zPiJyKHwRfnNT.png" Alt="Hades Game" />
+
+                        <MudPaper Style="min-width:60%">
+                            <div class="flex-container">
+
+                                <div class="card-info">
+                                    <MudText Typo="Typo.h2" Style="color:#4C3CAF">Hades</MudText>
+                                    <MudText Typo="Typo.body1" Style="color:#4C3CAF">PC version</MudText>
+                                </div>
+                                <div class="progress" id="hades"></div>
+                            </div>
+                        </MudPaper>
+                        
+
+                        <div class="percentage">
+                            <MudText Typo="Typo.h2">40%</MudText>
+                        </div>
+
+                    </MudCard>
+
+                </MudCard>
+
+                <MudCard Style=" background: linear-gradient(to left top, rgba(255,255,255,1), rgba(255,255,255,0.8));
+                                                          border-radius:20px; margin: 2rem 0rem; padding: 5px;
+                                                          box-shadow: rgba(151, 65, 252, 0.2) 0 15px 30px -5px;
+                                                          background: linear-gradient(144deg,#AF40FF, #5B42F3 50%,#00DDEB);" Elevation="2">
+                    <MudCard Style="display:flex; border-radius: 17px;
+                                     width: 100%; height: 100%; align-items:center;
+                                     padding:10px;
+                                     background: linear-gradient(to left top, rgba(255,255,255,1), rgba(255,255,255,0.8));">
+                        <MudImage Height="150" Width="150" Class="rounded-lg" Src="https://i.ytimg.com/vi/e-3pEF_NBT0/maxresdefault.jpg" Alt="Needy Girl Overdose Game" />
+
+                        <MudPaper Style="min-width:60%;">
+                        <div class="flex-container">
+                            <div card="card-info">
+                                <MudText Typo="Typo.h2" Style="color:#4C3CAF">Needy Girl Overdose</MudText>
+                                <MudText Typo="Typo.body1" Style="color:#4C3CAF">PC version</MudText>
+                            </div>
+                            <div class="progress"></div>
+                        </div>
+                        </MudPaper>
+
+                        <div class="percentage">
+                            <MudText Typo="Typo.h2">60%</MudText>
+                        </div>
+                    </MudCard>
+                </MudCard>
+
+            </div>
+
+        </div>
+
+
+    </section>
+
+</main>
+
+
+@code {
+    bool disabled = false;
+}
